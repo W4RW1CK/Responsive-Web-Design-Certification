@@ -1,0 +1,68 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">My Form</h1>
+    </header>
+    <main>
+      <p id="description">In <b>My Form</b> you can find <i>form</i> templates for every type of <i>form</i>.</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Jhon Doe" required />
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="email@example.com" required />
+          <label for="number" id="number-label">Age: (Optional)</label>
+          <input type="number" id="number" min="18" max="100" placeholder="21" />
+        </fieldset>
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <select id="dropdown">
+            <option value="social-media">Social Media</option>
+            <option value="ads">Ads</option>
+            <option value="recommendation">Recommendation</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend our services?</legend>
+          <input type="radio" id="yes" name="radio" value="yes" />
+          <label for="yes" id="yes-label1">Yes</label>
+          <input type="radio" id="no" name="radio" value="no" />
+          <label for="no" id="no-label">No</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your favorite service</legend>
+          <input type="checkbox" id="service-1" value="service-1" />
+          <label for="service-1">Service 1</label>
+          <input type="checkbox" id="service-2" value="service-2" />
+          <label for="service-2">Service 2</label>
+          <input type="checkbox" id="service-3" value="service-3" />
+          <label for="service-3">Service 3</label>
+          <input type="checkbox" id="service-4" value="service-4" />
+          <label for="service-4">Service 4</label>
+          <input type="checkbox" id="service-5" value="service-5" />
+          <label for="service-5">Service 5</label>
+        </fieldset>
+        <fieldset>
+          <legend>Any comments or sugestions?</legend>
+          <textarea id="comments" placeholder="Entre your comments here"></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>Service provided by <a href="myform.com">My Form</a> - Copyright 2025</p>
+    </footer>
+  </body>
+</html>
+
+** end of index.html **
+
