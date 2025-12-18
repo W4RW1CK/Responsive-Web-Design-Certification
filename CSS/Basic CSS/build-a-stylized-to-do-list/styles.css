@@ -1,0 +1,37 @@
+body {
+  background-color: gray;
+}
+
+.todo-list {
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+.element {
+  padding: 10px 25px;
+  background-color: gray;
+  margin: 10px;
+  diplay: inlide-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+a:focus {
+  outline: 2px solid red;
+}
+
+a:visited {
+  color: purple;
+}
+
