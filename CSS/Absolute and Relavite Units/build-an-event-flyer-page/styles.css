@@ -1,0 +1,20 @@
+* {
+  text-align: center;
+}
+
+body {
+  padding: 50px 10px;
+  margin: 0 auto;
+  width: 75vw;
+  height: auto;
+  min-height: calc(100vh - 100px)
+}
+
+hr {
+  width: 90%;
+}
+
+section {
+  width: 30%;
+  display: inline-block;
+}
