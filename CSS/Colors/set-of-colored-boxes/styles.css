@@ -1,0 +1,32 @@
+body {
+  background-color: #f4f4f4
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.color1 {
+  background-color: #132426;
+}
+
+.color2 {
+  background-color: rgb(5 242 108);
+}
+
+.color3 {
+  background-color: seagreen;
+}
+
+.color4 {
+  background-color: hsl(141, 80%, 19%);
+}
+
+.color5 {
+  background-color: #08401B
+}
+
