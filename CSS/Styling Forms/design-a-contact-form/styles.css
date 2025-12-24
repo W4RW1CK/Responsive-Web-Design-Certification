@@ -1,0 +1,38 @@
+body {
+  background-color: #ffffff;
+  font-size: 1.2rem
+}
+
+.form-container {
+  background-color: #dbd1c3;
+  border-radius: 15px;
+  padding: 15px;
+  min-width: 300px;
+  max-width: 500px;
+  width: 80vw;
+  margin: 15vh auto;
+  text-align: center;
+}
+
+label {
+  margin: 15px;
+  color: #000;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 15px; 
+}
+
+button {
+  background-color: #c7bfa2;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 15px;
+  border-color: #67725f;
+}
+
+button:hover {
+  background-color: #9e917e;
+}
