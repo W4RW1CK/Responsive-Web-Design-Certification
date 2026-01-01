@@ -1,0 +1,27 @@
+* {
+  background-color: #20293c;
+  color: #faffff;
+  text-align: center;
+}
+
+#main {
+  width: 80vh;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+}
+
+.color {
+  color: #d44a44;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.white {
+  font-weight: 400;
+  font-size: 1rem;
+}

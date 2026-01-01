@@ -1,0 +1,97 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main id="main">
+      <h1 id="title">Vitalik Buterin</h1>
+      <figure id="img-div">
+        <img id="image" src="https://imgs.search.brave.com/GepsuPYpZ6t1knY7-_tzmHOy1DgIKBvAlaCFanMGPtg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jcnlw/dG8ubmV3cy9hcHAv/dXBsb2Fkcy8yMDI1/LzA0L2NyeXB0by1u/ZXdzLVZpdGFsaWst/QnV0ZXJpbi1vcHRp/b24wMDItODgweDUy/NS53ZWJw" alt="Side view photo of Vitalik Buterin">
+        <figcaption id="img-caption">Side view photo of Vitalik Buterin</figcaption>
+      </figure>
+      <ul id="tribute-info">
+        <li class="color">
+          1994 	<span class="white">&ndash; Born on January 31 in Kolomna, Russia, to Dmitry Buterin (a computer scientist) and Natalia Ameline. His family soon recognized his unusual intellectual abilities.<span>
+        </li>
+        <li class="color">
+          2000 <span class="white">&ndash; Moves with his parents to Canada at age 6. In school, teachers notice his talent for mathematics and programming. He is placed into a gifted program where he develops an early interest in economics and computer science.</span>
+        </li>
+        <li class="color">
+          2011 <span class="white">&ndash; At 17, Vitalik co-founds Bitcoin Magazine, one of the first serious publications dedicated to cryptocurrency. He writes hundreds of articles explaining Bitcoin's mechanics and potential, becoming a respected voice in the emerging crypto community.</span>
+        </li>
+        <li class="color">
+          2013 <span class="white">&ndash; Publishes the Ethereum white paper, outlining a vision for a blockchain platform that could run smart contracts—self-executing agreements coded directly into the blockchain. This idea expands blockchain beyond currency into a platform for decentralized applications.</span>
+        </li>
+        <li class="color">
+          2014 <span class="white">&ndash; Drops out of the University of Waterloo after receiving the Thiel Fellowship, a $100,000 grant from PayPal co-founder Peter Thiel to pursue Ethereum full-time.</span>
+        </li>
+        <li class="color">
+          2015 <span class="white">&ndash; Ethereum officially launches. Developers around the world begin building decentralized applications (dApps) on the platform. Ethereum quickly becomes the second-largest cryptocurrency by market capitalization.</span>
+        </li>
+        <li class="color">
+          2016 <span class="white">&ndash; The infamous DAO hack occurs, draining millions of dollars from a decentralized investment fund built on Ethereum. Vitalik helps lead the community through the crisis, which results in a controversial hard fork that splits Ethereum into two chains: Ethereum (ETH) and Ethereum Classic (ETC).</span>
+        </li>
+        <li class="color">
+          2017 <span class="white">&ndash; Ethereum becomes the backbone of the ICO boom, where startups raise billions by issuing tokens. Vitalik warns of scams and unsustainable hype, showing his cautious approach to crypto's explosive growth.</span>
+        </li>
+        <li class="color">
+          2018&ndash;2019 <span class="white">&ndash; Advocates for scaling solutions to Ethereum's congestion problems. He promotes sharding and layer-2 rollups as ways to increase transaction throughput.</span>
+        </li>
+        <li class="color">
+          2020 <span class="white">&ndash; Plays a central role in guiding Ethereum's transition to Ethereum 2.0, introducing proof-of-stake consensus to reduce energy consumption compared to proof-of-work mining.</span>
+        </li>
+        <li class="color">
+          2022 <span class="white">&ndash; Ethereum completes The Merge, one of the most significant upgrades in blockchain history. The network successfully transitions from proof-of-work to proof-of-stake, cutting energy usage by over 99%. Vitalik calls it “the beginning of a new era for Ethereum.”</span>
+        </li>
+        <li class="color">
+          2023&ndash;2025 <span class="white">&ndash; Continues to advocate for decentralized governance, privacy-preserving technologies, and scaling solutions. He emphasizes the importance of building systems that are resistant to censorship and centralized control.</span>
+        </li>
+        <li class="color">
+          2025 <span class="white">&ndash; Recognized globally as one of the most influential figures in blockchain, living in Zug, Switzerland, and still actively shaping Ethereum's future.</span>
+        </li>
+      </ul>
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Vitalik_Buterin" target="_blank">Read More about him</a>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  background-color: #20293c;
+  color: #faffff;
+  text-align: center;
+}
+
+#main {
+  width: 80vh;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+}
+
+.color {
+  color: #d44a44;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.white {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+** end of styles.css **
+
