@@ -1,0 +1,125 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.space {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.earth {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.orbit {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+
+.orbit:nth-of-type(2) {
+  transform: translate(50%, -50%);
+  animation: orbit2 4s linear infinite;
+
+}
+
+.orbit:nth-of-type(3) {
+  transform: translate(50%, 50%);
+  animation: orbit3 6s linear infinite;
+
+}
+
+.orbit:nth-of-type(4) {
+  transform: translate(-50%, 50%);
+  animation: orbit4 7s linear infinite;
+
+}
+
+.moon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.orbit:nth-of-type(2) .moon {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, 50%);
+}
+
+.orbit:nth-of-type(3) .moon {
+  width: 20px;
+  height: 20px;
+  top: 40%;
+  left: 30%;
+  transform: translate(50%, 50%);
+}
+
+.orbit:nth-of-type(4) .moon {
+  width: 40px;
+  height: 40px;
+  top: 30%;
+  left: 20%;
+  transform: translate(50%, -50%);
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: rotate(0deg) translate(50%, -50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(50%, -50%);
+  }
+}
+
+@keyframes orbit3 {
+  0% {
+    transform: rotate(0deg) translate(50%, 50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(50%, 50%);
+  }
+}
+
+@keyframes orbit4 {
+  0% {
+    transform: rotate(0deg) translate(-50%, 50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, 50%);
+  }
+}
