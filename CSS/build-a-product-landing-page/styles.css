@@ -1,0 +1,153 @@
+/*Universal*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+:root {
+  --btc-orange: #F7931A;
+  --btc-black: #000;
+  --btc-white: #FFF;
+  --btc-gold: #FFD700;
+  --btc-gray: #2C2C2C;
+
+}
+
+body {
+  display: grid;
+}
+
+/* Header */
+
+#header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  height: 10vh;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--btc-black);
+  grid-area: header;
+  z-index: 1;
+}
+
+figure {
+  display: flex;
+  width: 60vw;
+  height: 100%;
+  align-items: center;
+}
+
+#header-img {
+  max-height: 10vh;
+  width: 256px;
+}
+
+#nav-bar {
+  display: block;
+  width: 30vw;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+#nav-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--btc-white);
+  text-decoration: none;
+}
+
+/* Main */
+
+main {
+  grid-area: main;
+  margin: 12vh 0 0;
+}
+
+h2, p {
+  margin: 2vh;
+}
+
+#video-section .video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 0;
+}
+
+#form-section {
+  margin: 5vh;
+}
+
+#email {
+  display: block;
+  padding: 1vh 5vh;
+  margin: 2vh auto;
+}
+
+#submit {
+  display: block;
+  padding: 1vh;
+  margin: 2vh auto;
+}
+
+#info-section {
+  margin-bottom: 10vh;
+}
+
+/* Footer */
+
+footer {
+  grid-area: footer;
+  background-color: var(--btc-black);
+  height: 20vh;
+}
+/*@media*/
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: var(--btc-gray);
+  color: var(--btc-white);
+  }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+  'header header header'
+  'left-sidebar main right-sidebar'
+  'footer footer footer';
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  'header header header'
+  'left-sidebar main right-sidebar'
+  'footer footer footer';
+  }
+}

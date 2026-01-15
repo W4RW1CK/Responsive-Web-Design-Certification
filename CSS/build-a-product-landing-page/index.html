@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <header id="header">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitcoin_logo.svg" alt="Bitcoin Logo" id="header-img" />
+    </figure>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#video-section" class="nav-link">What is Bitcoin?</a></li>
+        <li><a href="#form-section" class="nav-link">Subscibe</a></li>
+        <li><a href="#info-section" class="nav-link">How does Bitcoin Works</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="video-section">
+      <h2>What is Bitcoin?</h2>
+      <p>Bitcoin (abbreviation: BTC; sign: ₿) is the first decentralized cryptocurrency. Based on a free-market ideology, bitcoin was invented in 2008 when an unknown person published a white paper under the pseudonym of Satoshi Nakamoto. Use of bitcoin as a currency began in 2009, with the release of its open-source implementation.</p>
+      <div class="video">
+        <iframe 
+        id="video""
+        src="https://www.youtube.com/embed/watch?v=Js6qesKGzp8"
+        alowfullscreen
+      >
+        </iframe>
+      </div>
+    </section>
+    <section id="form-section">
+      <h2>Subscribe</h2>
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <input id="email" type="email" placeholder="example@email.com" name="email" />
+        <input  id="submit" type="submit" value="Subscribe Me" />
+      </form>
+    </section>
+    <section id="info-section">
+      <h2>How does Bitcoin Works</h2>
+      <p>
+        Bitcoin works through the collaboration of computers, each of which acts as a node in the peer-to-peer bitcoin network. Each node maintains an independent copy of a public distributed ledger of transactions, called a blockchain, without central oversight. Transactions are validated through the use of cryptography, preventing one person from spending another person's bitcoin, as long as the owner of the bitcoin keeps certain sensitive data secret.
+      </p>
+      <p>
+        Consensus between nodes about the content of the blockchain is achieved using a computationally intensive process based on proof of work, called mining, which is performed by purpose-built computers.
+      </p>
+      <p>
+        Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.
+      </p>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
+
