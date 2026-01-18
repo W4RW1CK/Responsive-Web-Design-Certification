@@ -1,0 +1,158 @@
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  color: var(--nord0);
+  border: 0;
+  text-align: center;
+}
+
+
+html {
+  font-size: 3rem;
+}
+
+body {
+  background: linear-gradient(var(--nord6), var(--nord7), var(--nord8));
+}
+
+/* Header */
+
+header {
+  height: 10vh;
+}
+  /*Navbar*/
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--nord6);
+}
+
+#navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100vw;
+  height: 10vh;
+}
+
+#navbar li {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+/*Main*/
+
+  /* Welcome */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+  /*Projects*/
+
+#project-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5vh;
+}
+
+.project-tile {
+  margin: auto;
+  width: 90%;
+  }
+
+img {
+  width: 100%;
+}
+
+  /*Contact*/
+
+#contact {
+  height: 30vh;
+}
+
+#contact h2 {
+  padding: 5vh;
+}
+
+#contact a {
+  padding: 1vh;
+}
+
+/* Footer */
+
+footer p {
+  text-align: left  ;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 2rem;
+  }
+
+  #project-section {
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1.25rem;
+  }
+
+  #project-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }  
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: var(--nord6);
+  }
+  body {
+    background: linear-gradient(var(--nord0), var(--nord1), var(--nord2));
+  }
+  
+  #navbar {
+    background-color: var(--nord0);
+  }
+}
